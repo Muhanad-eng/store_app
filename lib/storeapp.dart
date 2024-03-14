@@ -7,12 +7,14 @@ class StoreApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Store_App',
-      theme: ThemeData(
-       
+      theme: ThemeData(brightness:Brightness.light
       ),
       home: Scaffold(
         appBar: AppBar(title:Text('Store App') ),
-        body:Column() ),
+        body:
+          const Center(child: Text("hello firebase",style: TextStyle(color: Colors.black),)),
+       floatingActionButton: FloatingActionButton(onPressed: (){},child: Icon(Icons.add),),
+        ) 
     );
   }
 }
